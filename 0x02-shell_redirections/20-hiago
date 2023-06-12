@@ -1,2 +1,5 @@
 #!/bin/bash
-tr "A" "Z" | tr "c" "e"
+input="$1"
+output="${input//c/}"
+output="${output//C/}"
+echo "$output"
